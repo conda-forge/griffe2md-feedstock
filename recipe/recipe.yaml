@@ -1,7 +1,7 @@
 schema_version: 1
 
 context:
-  version: "1.5.0"
+  version: "1.5.1"
 
 package:
   name: griffe2md
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/g/griffe2md/griffe2md-${{ version }}.tar.gz
-  sha256: 58e184dffcd506ca97f54516dc07dd41f98ddc76eb17ba30518cf3dda18f6a51
+  sha256: 6ccf7ed1db2955c70b88eabf404f4f6a2c632d50790157fc3d3b7d269017dffd
 
 build:
   number: 0
@@ -36,7 +36,7 @@ tests:
       imports:
         - griffe2md
       pip_check: true
-      python_version: 
+      python_version:
         - ${{ python_min }}.*
         - '*'
   - requirements:
